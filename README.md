@@ -177,3 +177,44 @@ Instale a dependência:
 ```bash
 pip install mysql-connector-python
 ```
+-------------------------------------------------------------------------------------------------------------------------
+
+# Image WebP Converter Script - convert_to_webp.py
+
+Este script Python permite **converter imagens em uma pasta para o formato WebP**, mantendo os arquivos originais em uma pasta de backup.
+
+## Funcionalidades
+
+- Converte todas as imagens de uma pasta especificada para **WebP**.  
+- Mantém os arquivos originais, movendo-os para uma pasta de **backup**.  
+- Adiciona o sufixo `_webp` nos arquivos convertidos para evitar sobrescrita.  
+- Suporta **JPEG, PNG, BMP e TIFF**.  
+- Suporta conversão **lossless** opcional.  
+- Multi-threaded para processamento rápido de grandes quantidades de imagens.  
+- Permite escolher qualidade de compressão e número de threads.  
+- Ignora arquivos que já foram convertidos.
+
+## Pré-requisitos
+
+- Python 3.x  
+- Biblioteca `Pillow`
+
+Instale a dependência:
+
+```bash
+pip install pillow
+```
+Como usar
+1. Clone ou baixe este repositório.
+2. Execute o script:
+```
+python convert_to_webp.py
+```
+3. Insira as informações solicitadas:
+  Pasta contendo as imagens a converter.
+  Pasta de backup para os originais.
+  Qualidade do WebP (0-100, padrão 80).
+  Se deseja usar WebP lossless (y/n).
+  Número de threads para processamento (padrão 4).
+
+O script processará todas as imagens da pasta especificada e moverá os originais para a pasta de backup.
