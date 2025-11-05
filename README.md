@@ -127,6 +127,11 @@ Instale as dependências:
 ```bash
 pip install fastapi uvicorn requests beautifulsoup4 pydantic
 ```
+
+Correr:
+```bash
+uvicorn steam_api:app --reload
+```
 -------------------------------------------------------------------------------------------------------------------------
 
 # Image Renamer Script - image_rename.py
